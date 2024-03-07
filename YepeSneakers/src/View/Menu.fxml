@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="578.0" prefWidth="885.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="Controller.MenuController">
+   <children>
+      <Text layoutX="270.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sneaker Land" textAlignment="CENTER">
+         <font>
+            <Font name="MV Boli" size="54.0" />
+         </font>
+      </Text>
+      <Button fx:id="crearNuevoSneaker" layoutX="350.0" layoutY="160.0" mnemonicParsing="false" onAction="#nuevoSneakerBtn" prefHeight="47.0" prefWidth="176.0" style="-fx-background-radius: 100px; -fx-background-color: orange; -fx-border-color: black; -fx-border-radius: 100px;" text="Crear Nuevo Sneaker" textAlignment="CENTER">
+         <font>
+            <Font name="Franklin Gothic Medium" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="eliminarSneakers" layoutX="339.0" layoutY="359.0" mnemonicParsing="false" onAction="#eliminarSneakerBtn" prefHeight="47.0" prefWidth="196.0" style="-fx-background-color: pink; -fx-background-radius: 100px; -fx-border-color: black; -fx-border-radius: 100px;" text="Eliminar Sneaker Existente">
+         <font>
+            <Font name="Franklin Gothic Medium Italic" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="actualizarSneakers" layoutX="340.0" layoutY="290.0" mnemonicParsing="false" onAction="#actualizarSneakerBtn" prefHeight="47.0" prefWidth="196.0" style="-fx-background-color: cyan; -fx-background-radius: 100px; -fx-border-color: black; -fx-border-radius: 100px;" text="Actualizar Sneaker Existente">
+         <font>
+            <Font name="Franklin Gothic Medium Italic" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="VerSneakers" layoutX="344.0" layoutY="224.0" mnemonicParsing="false" onAction="#verSneakerBtn" prefHeight="47.0" prefWidth="188.0" style="-fx-background-color: yellow; -fx-background-radius: 100px; -fx-border-color: black; -fx-border-radius: 100px;" text="Ver Sneakers Existentes">
+         <font>
+            <Font name="Franklin Gothic Medium Italic" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="408.0" fitWidth="303.0" layoutX="529.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/skater.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="245.0" fitWidth="330.0" layoutX="-1.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true" rotate="6.8">
+         <image>
+            <Image url="@../images/naik.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
