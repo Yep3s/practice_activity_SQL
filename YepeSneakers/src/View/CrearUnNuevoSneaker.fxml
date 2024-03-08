@@ -29,30 +29,44 @@
             <Image url="@../images/skater.png" />
          </image>
       </ImageView>
-      <Text layoutX="200.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marca Del Sneaker">
+      <Text layoutX="108.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marca Del Sneaker">
          <font>
             <Font name="System Bold Italic" size="13.0" />
          </font></Text>
-      <Text layoutX="298.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Talla Del Sneaker">
+      <Text layoutX="307.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Talla Del Sneaker">
          <font>
             <Font name="System Bold Italic" size="13.0" />
          </font></Text>
-      <Text layoutX="89.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modelo Del Sneaker">
+      <Text layoutX="94.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modelo Del Sneaker">
          <font>
             <Font name="System Bold Italic" size="13.0" />
          </font></Text>
-      <Text layoutX="101.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Color Del Sneaker">
+      <Text layoutX="102.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Color Del Sneaker">
          <font>
             <Font name="System Bold Italic" size="13.0" />
          </font></Text>
-      <Text layoutX="298.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Precio Del Sneaker">
+      <Text layoutX="303.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Precio Del Sneaker">
          <font>
             <Font name="System Bold Italic" size="13.0" />
          </font></Text>
-      <TextField fx:id="model" layoutX="74.0" layoutY="399.0" style="-fx-border-radius: 300px; -fx-border-color: black; -fx-background-radius: 300px;" />
-      <TextField fx:id="price" layoutX="279.0" layoutY="399.0" style="-fx-border-radius: 300px; -fx-border-color: black; -fx-background-radius: 300px;" />
-      <TextField fx:id="color" layoutX="74.0" layoutY="311.0" style="-fx-border-radius: 300px; -fx-border-color: black; -fx-background-radius: 300px;" />
-      <TextField fx:id="size" layoutX="279.0" layoutY="311.0" style="-fx-border-radius: 300px; -fx-border-color: black; -fx-background-radius: 300px;" />
-      <TextField fx:id="brand" layoutX="177.0" layoutY="228.0" style="-fx-border-radius: 300px; -fx-border-color: black; -fx-background-radius: 300px;" />
+      <TextField fx:id="model" alignment="CENTER" layoutX="74.0" layoutY="399.0" style="-fx-border-radius: 300px; -fx-border-color: black; -fx-background-radius: 300px;" />
+      <TextField fx:id="price" alignment="CENTER" layoutX="279.0" layoutY="399.0" style="-fx-border-radius: 300px; -fx-border-color: black; -fx-background-radius: 300px;" />
+      <TextField fx:id="color" alignment="CENTER" layoutX="74.0" layoutY="311.0" style="-fx-border-radius: 300px; -fx-border-color: black; -fx-background-radius: 300px;" />
+      <TextField fx:id="size" alignment="CENTER" layoutX="279.0" layoutY="311.0" style="-fx-border-radius: 300px; -fx-border-color: black; -fx-background-radius: 300px;" />
+      <TextField fx:id="brand" alignment="CENTER" layoutX="79.0" layoutY="230.0" style="-fx-border-radius: 300px; -fx-border-color: black; -fx-background-radius: 300px;" />
+      <Button fx:id="comeback" layoutX="32.0" layoutY="517.0" mnemonicParsing="false" onAction="#volverBTN" prefHeight="27.0" prefWidth="83.0" style="-fx-background-color: purple; -fx-background-radius: 300px; -fx-border-color: black; -fx-border-radius: 300px;" text="Volver" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text layoutX="296.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cantidad De Sneaker">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="quantity" alignment="CENTER" layoutX="279.0" layoutY="231.0" style="-fx-border-radius: 300px; -fx-border-color: black; -fx-background-radius: 300px;" />
    </children>
 </AnchorPane>

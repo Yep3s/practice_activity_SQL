@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="578.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.VerSneakerController">
+   <children>
+      <Text layoutX="270.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sneaker Land" textAlignment="CENTER">
+         <font>
+            <Font name="MV Boli" size="54.0" />
+         </font>
+      </Text>
+      <Button fx:id="comeback" layoutX="400.0" layoutY="519.0" mnemonicParsing="false" onAction="#volverBTN" prefHeight="27.0" prefWidth="83.0" style="-fx-background-color: purple; -fx-background-radius: 300px; -fx-border-color: black; -fx-border-radius: 300px;" text="Volver" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView layoutX="18.0" layoutY="109.0" prefHeight="388.0" prefWidth="847.0">
+        <columns>
+          <TableColumn prefWidth="98.40002632141113" text="Codigo" />
+          <TableColumn minWidth="0.0" prefWidth="128.7999496459961" text="Marca" />
+            <TableColumn prefWidth="76.79998779296875" text="Talla" />
+            <TableColumn prefWidth="124.79998779296875" text="Modelo" />
+            <TableColumn prefWidth="131.20004272460938" text="Color" />
+            <TableColumn prefWidth="154.39996337890625" text="Cantidad" />
+            <TableColumn prefWidth="146.400146484375" text="Precio" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

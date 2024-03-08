@@ -9,16 +9,27 @@ public class Zapato {
     private String talla;
     private String modelo;
     private String color;
+    private int cantidad;
     private int precio;
 
-    public Zapato(String codigo, String marca, String talla, String modelo, String color, int precio) {
+    public Zapato(String codigo, String marca, String talla, String modelo, String color, int cantidad, int precio) {
         this.codigo = codigo;
         this.marca = marca;
         this.talla = talla;
         this.modelo = modelo;
         this.color = color;
+        this.cantidad = cantidad;
         this.precio = precio;
     }
+
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
+    }
+
 
     public String getCodigo() {
         return codigo;
