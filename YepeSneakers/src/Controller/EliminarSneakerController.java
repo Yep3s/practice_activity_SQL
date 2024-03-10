@@ -7,43 +7,29 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-public class CrearSneakerController {
-
-    @FXML
-    private TextField brand;
+public class EliminarSneakerController {
 
     @FXML
     private TextField code;
 
     @FXML
-    private TextField color;
-
-    @FXML
     private Button comeback;
 
     @FXML
-    private Button crearNuevoSneaker;
+    private Button eliminarSneaker;
 
     @FXML
-    private TextField model;
+    private Text textoCambiado;
 
     @FXML
-    private TextField price;
-
-    @FXML
-    private TextField quantity;
-
-    @FXML
-    private TextField size;
-
-    @FXML
-    void nuevoSneakerBtn(ActionEvent event) {
-
+    void eliminarSneakerBTN(ActionEvent event) {
+        
         try {
             // Cargar el archivo FXML de la segunda vista
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/Guardado.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/Eliminado.fxml"));
             Parent root = loader.load();
 
             // Obtener el controlador de la segunda vista
@@ -60,7 +46,7 @@ public class CrearSneakerController {
             // Mostrar la nueva ventana
             stage.show();
 
-            // Cerrar la ventana actual (opcional)
+        // Cerrar la ventana actual (opcional)
             ((Stage) ((Button) event.getSource()).getScene().getWindow()).close();
 
         } catch (Exception e) {
@@ -71,7 +57,6 @@ public class CrearSneakerController {
 
     @FXML
     void volverBTN(ActionEvent event) {
-
         try {
             // Cargar el archivo FXML de la segunda vista
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/Menu.fxml"));
@@ -91,7 +76,7 @@ public class CrearSneakerController {
             // Mostrar la nueva ventana
             stage.show();
 
-            // Cerrar la ventana actual (opcional)
+        // Cerrar la ventana actual (opcional)
             ((Stage) ((Button) event.getSource()).getScene().getWindow()).close();
 
         } catch (Exception e) {
