@@ -1,5 +1,6 @@
 package Controller;
 
+import controladoresSQL.Sql;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -24,10 +25,15 @@ public class EliminarSneakerController {
     @FXML
     private Text textoCambiado;
 
+    Sql sql = new Sql();
+
     @FXML
     void eliminarSneakerBTN(ActionEvent event) {
-        
+
         try {
+
+            sql.eliminarSneaker(code.getText());
+
             // Cargar el archivo FXML de la segunda vista
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/Eliminado.fxml"));
             Parent root = loader.load();
@@ -46,7 +52,7 @@ public class EliminarSneakerController {
             // Mostrar la nueva ventana
             stage.show();
 
-        // Cerrar la ventana actual (opcional)
+            // Cerrar la ventana actual (opcional)
             ((Stage) ((Button) event.getSource()).getScene().getWindow()).close();
 
         } catch (Exception e) {
@@ -76,7 +82,7 @@ public class EliminarSneakerController {
             // Mostrar la nueva ventana
             stage.show();
 
-        // Cerrar la ventana actual (opcional)
+            // Cerrar la ventana actual (opcional)
             ((Stage) ((Button) event.getSource()).getScene().getWindow()).close();
 
         } catch (Exception e) {

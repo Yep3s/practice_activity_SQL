@@ -1,9 +1,7 @@
-
 package Model;
 
-
 public class Zapato {
-    
+
     private String codigo;
     private String marca;
     private String talla;
@@ -11,6 +9,10 @@ public class Zapato {
     private String color;
     private int cantidad;
     private int precio;
+
+    public Zapato() {
+
+    }
 
     public Zapato(String codigo, String marca, String talla, String modelo, String color, int cantidad, int precio) {
         this.codigo = codigo;
@@ -30,7 +32,6 @@ public class Zapato {
         this.cantidad = cantidad;
     }
 
-
     public String getCodigo() {
         return codigo;
     }
@@ -46,8 +47,6 @@ public class Zapato {
     public void setPrecio(int precio) {
         this.precio = precio;
     }
-
-
 
     public String getMarca() {
         return marca;
@@ -80,8 +79,5 @@ public class Zapato {
     public void setColor(String color) {
         this.color = color;
     }
-    
-    
-    
-    
+
 }

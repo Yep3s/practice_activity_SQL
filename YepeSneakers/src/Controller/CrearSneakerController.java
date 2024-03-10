@@ -1,5 +1,7 @@
 package Controller;
 
+import Model.Zapato;
+import controladoresSQL.Sql;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -42,6 +44,18 @@ public class CrearSneakerController {
     void nuevoSneakerBtn(ActionEvent event) {
 
         try {
+            Sql controlador = new Sql();
+            Zapato zapato = new Zapato();
+
+            controlador.guardarSneaker(
+                    new Zapato(code.getText(),
+                            brand.getText(),
+                           size.getText(),
+                            model.getText(),
+                            color.getText(),
+                            Integer.parseInt(quantity.getText()),
+                            Integer.parseInt(price.getText())));
+
             // Cargar el archivo FXML de la segunda vista
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/Guardado.fxml"));
             Parent root = loader.load();

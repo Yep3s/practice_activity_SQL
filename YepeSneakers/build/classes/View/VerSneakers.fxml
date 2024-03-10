@@ -23,15 +23,15 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <TableView layoutX="18.0" layoutY="109.0" prefHeight="388.0" prefWidth="847.0">
+      <TableView fx:id="sneakersTable" layoutX="18.0" layoutY="109.0" prefHeight="388.0" prefWidth="847.0">
         <columns>
-          <TableColumn prefWidth="98.40002632141113" text="Codigo" />
-          <TableColumn minWidth="0.0" prefWidth="128.7999496459961" text="Marca" />
-            <TableColumn prefWidth="76.79998779296875" text="Talla" />
-            <TableColumn prefWidth="124.79998779296875" text="Modelo" />
-            <TableColumn prefWidth="131.20004272460938" text="Color" />
-            <TableColumn prefWidth="154.39996337890625" text="Cantidad" />
-            <TableColumn prefWidth="146.400146484375" text="Precio" />
+          <TableColumn fx:id="codeColumn" prefWidth="104.80002021789551" text="Codigo" />
+          <TableColumn fx:id="brandColumn" minWidth="0.0" prefWidth="112.79998016357422" text="Marca" />
+            <TableColumn fx:id="sizeColumn" prefWidth="112.0" text="Talla" />
+            <TableColumn fx:id="modelColumn" prefWidth="151.20001220703125" text="Modelo" />
+            <TableColumn fx:id="colorColumn" prefWidth="117.60000610351562" text="Color" />
+            <TableColumn fx:id="QuantityColumn" prefWidth="144.0" text="Cantidad" />
+            <TableColumn fx:id="priceColumn" prefWidth="105.5999755859375" text="Precio" />
         </columns>
       </TableView>
    </children>

@@ -27,7 +27,7 @@ public class Main extends Application {
                 Conexion conexion = Conexion.getInstance();
                 conexion.setUsuario("root");
                 conexion.setContraseña("Cartagena2023-");
-                conexion.setUrl("jdbc:mysql://localhost:3306/tutoriales_bd");
+                conexion.setUrl("jdbc:mysql://127.0.0.1:3306/yepesneakers");
                 conexion.setDraiver("com.mysql.cj.jdbc.Driver");
                 conexion.conectar();
 

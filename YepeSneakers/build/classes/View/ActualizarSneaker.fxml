@@ -16,7 +16,7 @@
             <Font name="MV Boli" size="54.0" />
          </font>
       </Text>
-      <Button fx:id="actualizarSneaker" layoutX="165.0" layoutY="468.0" mnemonicParsing="false" onAction="#actualizarSneakerBTN" prefHeight="47.0" prefWidth="176.0" style="-fx-background-radius: 100px; -fx-background-color: cyan; -fx-border-color: black; -fx-border-radius: 100px;" text="Actualizar Sneaker" textAlignment="CENTER">
+      <Button fx:id="actualizarSneaker" layoutX="165.0" layoutY="482.0" mnemonicParsing="false" onAction="#actualizarSneakerBTN" prefHeight="47.0" prefWidth="176.0" style="-fx-background-radius: 100px; -fx-background-color: cyan; -fx-border-color: black; -fx-border-radius: 100px;" text="Actualizar Sneaker" textAlignment="CENTER">
          <font>
             <Font name="Franklin Gothic Medium" size="15.0" />
          </font>
@@ -24,31 +24,31 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Text layoutX="108.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marca Del Sneaker">
+      <Text layoutX="108.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marca Del Sneaker">
          <font>
             <Font name="System Bold Italic" size="13.0" />
          </font></Text>
-      <Text layoutX="307.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Talla Del Sneaker">
+      <Text layoutX="307.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Talla Del Sneaker">
          <font>
             <Font name="System Bold Italic" size="13.0" />
          </font></Text>
-      <Text layoutX="94.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modelo Del Sneaker">
+      <Text layoutX="94.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modelo Del Sneaker">
          <font>
             <Font name="System Bold Italic" size="13.0" />
          </font></Text>
-      <Text layoutX="102.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Color Del Sneaker">
+      <Text layoutX="102.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Color Del Sneaker">
          <font>
             <Font name="System Bold Italic" size="13.0" />
          </font></Text>
-      <Text layoutX="303.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Precio Del Sneaker">
+      <Text layoutX="303.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Precio Del Sneaker">
          <font>
             <Font name="System Bold Italic" size="13.0" />
          </font></Text>
-      <TextField fx:id="model" alignment="CENTER" layoutX="74.0" layoutY="425.0" style="-fx-border-radius: 300px; -fx-border-color: black; -fx-background-radius: 300px;" />
-      <TextField fx:id="price" alignment="CENTER" layoutX="279.0" layoutY="425.0" style="-fx-border-radius: 300px; -fx-border-color: black; -fx-background-radius: 300px;" />
-      <TextField fx:id="color" alignment="CENTER" layoutX="74.0" layoutY="337.0" style="-fx-border-radius: 300px; -fx-border-color: black; -fx-background-radius: 300px;" />
-      <TextField fx:id="size" alignment="CENTER" layoutX="279.0" layoutY="337.0" style="-fx-border-radius: 300px; -fx-border-color: black; -fx-background-radius: 300px;" />
-      <TextField fx:id="brand" alignment="CENTER" layoutX="79.0" layoutY="256.0" style="-fx-border-radius: 300px; -fx-border-color: black; -fx-background-radius: 300px;" />
+      <TextField fx:id="model" alignment="CENTER" layoutX="74.0" layoutY="439.0" style="-fx-border-radius: 300px; -fx-border-color: black; -fx-background-radius: 300px;" />
+      <TextField fx:id="price" alignment="CENTER" layoutX="279.0" layoutY="439.0" style="-fx-border-radius: 300px; -fx-border-color: black; -fx-background-radius: 300px;" />
+      <TextField fx:id="color" alignment="CENTER" layoutX="74.0" layoutY="351.0" style="-fx-border-radius: 300px; -fx-border-color: black; -fx-background-radius: 300px;" />
+      <TextField fx:id="size" alignment="CENTER" layoutX="279.0" layoutY="351.0" style="-fx-border-radius: 300px; -fx-border-color: black; -fx-background-radius: 300px;" />
+      <TextField fx:id="brand" alignment="CENTER" layoutX="79.0" layoutY="270.0" style="-fx-border-radius: 300px; -fx-border-color: black; -fx-background-radius: 300px;" />
       <Button fx:id="comeback" layoutX="32.0" layoutY="517.0" mnemonicParsing="false" onAction="#volverBTN" prefHeight="27.0" prefWidth="83.0" style="-fx-background-color: gold; -fx-background-radius: 300px; -fx-border-color: black; -fx-border-radius: 300px;" text="Volver" textFill="WHITE">
          <font>
             <Font name="System Bold" size="12.0" />
@@ -57,12 +57,12 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Text layoutX="296.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cantidad De Sneaker">
+      <Text layoutX="296.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cantidad De Sneaker">
          <font>
             <Font name="System Bold Italic" size="13.0" />
          </font>
       </Text>
-      <TextField fx:id="quantity" alignment="CENTER" layoutX="279.0" layoutY="257.0" style="-fx-border-radius: 300px; -fx-border-color: black; -fx-background-radius: 300px;" />
+      <TextField fx:id="quantity" alignment="CENTER" layoutX="279.0" layoutY="271.0" style="-fx-border-radius: 300px; -fx-border-color: black; -fx-background-radius: 300px;" />
       <TextField fx:id="code" alignment="CENTER" layoutX="184.0" layoutY="186.0" style="-fx-border-radius: 300px; -fx-border-color: black; -fx-background-radius: 300px;" />
       <Text layoutX="219.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo Del Sneaker">
          <font>
@@ -75,5 +75,13 @@
          </image>
       </ImageView>
       <Text fx:id="textoCambiado" layoutX="136.0" layoutY="549.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="234.13668823242188" />
+      <Button fx:id="search" layoutX="402.0" layoutY="186.0" mnemonicParsing="false" onAction="#searchBTN" prefHeight="16.0" prefWidth="68.0" style="-fx-background-color: RED; -fx-background-radius: 300px; -fx-border-color: black; -fx-border-radius: 300px;" text="Buscar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
    </children>
 </AnchorPane>
